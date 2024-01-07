@@ -2,9 +2,7 @@ class VeriSync {
   config;
   appId;
 
-  constructor() {}
-
-  initialize(config) {
+  constructor(config) {
     this.config = config;
     this.appId = encodeURIComponent(
       JSON.stringify({
@@ -17,7 +15,7 @@ class VeriSync {
   }
 
   open() {
-    window.open(`https://verisync.co/synchroniser/${this.appId}`, "_blank");
+    window.open(`https://app.verisync.co/synchroniser/${this.appId}`, "_blank");
 
     // handle errors if config is invalid
     // use typescript
