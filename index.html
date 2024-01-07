@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>verisync sdk</title>
+  </head>
+  <body>
+    <script>
+      const sync = new VeriSync();
+
+      sync.initialize({
+        flowId: "",
+        clientId: "",
+        redirectUrl: "https://cowrywise.co",
+        meta: {
+          name: "John Doe",
+          phoneNumber: "0802300000",
+        },
+      });
+
+      sync.open();
+    </script>
+  </body>
+</html>
