@@ -1,4 +1,4 @@
-class Verisync {
+class VeriSync {
   config;
   appId;
 
