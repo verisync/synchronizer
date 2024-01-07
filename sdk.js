@@ -14,11 +14,7 @@ class Verisync {
     );
   }
 
-  open() {
-    if (!this.appId) console.error(`App ID is ${this.appId}`, this.config)
-    window.open(`https://app.verisync.co/synchroniser/${this.appId}`, "_blank");
-
-    // handle errors if config is invalid
-    // use typescript
+  verify() {
+    window.location.href = `https://app.verisync.co/synchroniser/${this.appId}`;
   }
 }
